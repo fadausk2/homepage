@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head><link rel="stylesheet" type="text/css" href="webstyle.css">
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,700" rel="stylesheet">
+	<title></title>
+<style>
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+}
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="name"><img src="GRANDILO.png"></div>
+		<div class="header">
+		<div class="list1">
+				<a href="#"><span>Home</span></a> &nbsp; &nbsp; &nbsp;
+				<a href="#whot"><span>What we do</span></a> &nbsp; &nbsp; &nbsp;
+				<a href="#"><span>Portfolio/clients</span></a> &nbsp; &nbsp; &nbsp;
+				<a href="#"><span>About Us</span></a> &nbsp; &nbsp; &nbsp;
+				<a href="#"><span>Company</span></a> &nbsp; &nbsp; &nbsp;
+			</div>
+			<div class="list2"><a href="#"> Hire top talent </a></div>
+		</div>
+<div class="body1">
+	<div class="slideshow-container">
+	<div class="mySlides fade">
+  <img src="use3.jpg" style="width:135%; height: 500px">
+</div>
+
+<div class="mySlides fade">
+  <img src="use2.jpg" style="width:135%; height: 500px">
+  <span class="start"><a href="">start a project</a></span>
+</div>
+
+<div class="mySlides fade">
+  <img src="use1.jpg" style="width:135%; height: 500px">
+  <span class="starts"></span>
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+		<div class="body2">
+			<div id="whot">
+				<span class="w1">WHAT WE DO</span>
+				<span class="w2">we are almost everywhere and we provide the core services that takes<span><span class="w3"><br>your business to the next level.</span>		
+
+				<span class="b1">Website development</span>
+				<span class="b11"> Ranging from basic website to </span><span class="b111"> dynamic web applications for the</span><span class="b1111"> automation of 	your daily</span><span class="b11111"> business/office activities </span>
+				<div class="img1"><img src="capture.png" style="height: 30px; width: 30px;"></div>
+
+				<div class="c1">Mobile App Development</div>
+				<span class="c11">Develop mobile applications that are</span><span class="c111"> amazing, enhanting and simplifies your</span><span class="c1111">	life;both for Android and los platform.</span>
+				<div class="img2"><img src="capture1.png" style="height: 40px; width: 40px;"></div>
+
+				<div class="d1">Consultancy</div>
+				<span class="d11">We offer expert IT advice that will</span><span class="d111"> optimize your existing tech</span><span class="d1111">infrastructure</	span>
+				<div class="img3"><img src="capture2.png" style="height: 35px; width: 35px;"></div>
+
+				<div class="f1">Training</div>
+				<span class="f11">We train young and passionate folks</span><span class="f111"> that want to join in the trend of</span><span class="f1111">changing 	the world with technology.</span>
+				<div class="img4"><img src="capture3.png" style="height: 40px; width: 40px;"></div>
+
+				<div class="g1">Project Management</div>
+				<span class="g11">We see organizations through the</span><span class="g111"> initiation. planning design execution,</span><span class="g1111">	monitoring, controlling and closure of</span><span class="g1v"> a project.</span>
+				<div class="img5"><img src="capture5.png" style="height: 30px; width: 30px;"></div>
+
+				<div class="h1">search Engine</div>
+				<div class="h2">optimization(SEO)</div>
+				<span class="h3">Helping your website to rank top in</span><span class="h4"> search results.</span>
+				<div class="img6"><img src="capture6.png" style="height: 38px; width: 38px;"></div>
+			</div>
+	</div>	
+
+	<div class="partners">
+		<span class="p1">partners</span>
+		<section class="weather">
+          
+          <ul class="weather__next">
+            <li class="weather__next__item">
+              
+              <img class="weather__next__image" src="google.jpg" alt="icon of a sunny day">
+             
+            </li><li class="weather__next__item">
+              
+              <img class="weather__next__image" src="numatville.jpg" alt="icon of a cloudy day">
+              
+            </li><li class="weather__next__item">
+              
+              <img class="weather__next__image" src="famestar.png" alt="icon of a cloudy day">
+              
+            </li><li class="weather__next__item">
+             
+              <img class="weather__next__image" src="fbstart.png" alt="icon of a rainy day">
+              
+            </li><li class="weather__next__item">
+              
+              <img class="weather__next__image" src="ampion.jpg" alt="icon of a sunny day">
+              
+               </li><li class="weather__next__item">
+
+              <img class="weather__next__image" src="anita.jpg" alt="icon of a sunny day">
+            </li>
+          </ul>
+        </section>
+    </div>
+
+
+<div class="client">
+	<span class="t11">Clients Feedback</span>  <span class="t111"> Here is what our clients say. </span>
+
+	<img src="client.png" class="clientimg">
+
+                    <blockquote>
+                        <p class="black">"I love it when I see young vibrant guys disrupting the way we do things.
+                            Keep it up Grandilo."</p>
+                    </blockquote>
+                        <span class="blue">Mrs. Adesogan Nkiru, President, Le Niveau Consult </span>
+
+	
+</div>
+
+<div class="hero-image">
+			  <div class="hero-text">
+    			<h2 style="font-size:25px">At Grandilo, we try to be up to date with the latest technology</h2>
+		    	
+   				 <button>Get Start Now</button>
+			  </div>
+		</div>
+
+	
+
+</body>
+</html>
