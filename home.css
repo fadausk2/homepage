@@ -474,7 +474,7 @@ body{
   outline: 0;
   display: inline-block;
   padding: 10px 25px;
-  color: black;
+  color: #27e1ce;
   background-color: #7f7f7f;
   text-align: center;
   font-family: "Raleway", Arial, sans-serif;
@@ -484,5 +484,5 @@ body{
 
 .hero-text button:hover {
   background-color: #7f7f7f;
-  color: ;
+  color: white;
 }
